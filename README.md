@@ -58,11 +58,3 @@ streamlit run demo.py
 ## Tech stack
 
 Python, PyTorch, Streamlit, scikit-learn — trained on Google Colab (T4 GPU), CheXpert-small accessed via KaggleHub.
-
-## Key results & honest limitations
-
-- Test set is small (n=202), so results should be read with wide confidence intervals in mind.
-- The confidence model's AUROC drops from 0.830 (validation) to 0.705 (test) — a known generalisation gap, discussed in detail in the [full report](#).
-- Pneumothorax was the least stable label (low prevalence, low AUPRC) and drives most false positives — flagged as a structural limitation rather than smoothed over.
-
-Full methodology, evaluation, and discussion available in the accompanying project report.
